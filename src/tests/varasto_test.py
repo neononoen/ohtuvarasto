@@ -60,7 +60,7 @@ class TestVarasto(unittest.TestCase):
         self.varasto.ota_varastosta(maara)
 
     def test_tulostus_oikein(self):
-        saldo = Varasto(6)
+        saldo = Varasto(5)
 
         self.assertEqual(str(saldo), "saldo = 0, vielä tilaa 6")
         
