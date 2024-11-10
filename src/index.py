@@ -5,6 +5,11 @@ def main():
     mehua = Varasto(100.0)
     olutta = Varasto(100.0, 20.2)
 
+    helper1(mehua, olutta)
+    helper2(mehua, olutta)
+    helper3(mehua, olutta)
+
+def helper1(mehua, olutta):
     print("Luonnin jälkeen:")
     print(f"Mehuvarasto: {mehua}")
     print(f"Olutvarasto: {olutta}")
@@ -22,6 +27,7 @@ def main():
     mehua.ota_varastosta(3.14)
     print(f"Mehuvarasto: {mehua}")
 
+def helper2(mehua, olutta):
     print("Virhetilanteita:")
     print("Varasto(-100.0);")
     huono = Varasto(-100.0)
@@ -39,6 +45,8 @@ def main():
     print(f"Mehuvarasto: {mehua}")
     print("mehua.lisaa_varastoon(-666.0)")
     mehua.lisaa_varastoon(-666.0)
+
+def helper3(mehua, olutta):
     print(f"Mehuvarasto: {mehua}")
 
     print(f"Olutvarasto: {olutta}")
